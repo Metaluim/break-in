@@ -1,0 +1,14 @@
+#include "game.h"
+
+#include "box2d/Box2D.h"
+
+int main(int argc, char **argv)
+{
+    core::Game *g = core::Game::GetInstance();
+    if (!g->Initialize())
+        return -1;
+
+    g->Launch();
+    return 0;
+}
+
